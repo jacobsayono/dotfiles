@@ -121,7 +121,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ROS
+# ROS Humble (Ubuntu 22.04 LTS)
 source /opt/ros/humble/setup.bash
 alias ros='source install/setup.bash'
 
