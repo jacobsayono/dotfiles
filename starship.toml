@@ -6,8 +6,6 @@ $git_branch\
 $git_commit\
 $git_status\
 $git_state\
-$python\ 
-$c\ 
 $character\
 """
 
@@ -45,8 +43,8 @@ truncation_length = 5
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
-format = " [$symbol$branch]($style) "
-# symbol = "🍣 "
+format = "[$symbol$branch]($style) "
+# symbol = "branch "
 # style = "bold yellow"
 
 [git_commit]
@@ -57,22 +55,22 @@ style = "bold white"
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [git_status]
-conflicted = "⚔️  "
-ahead = "🏎️ ×${count} "
-behind = "🐢×${count} "
-diverged = "🔱: 🏎️×${ahead_count} 🐢×${behind_count} "
-untracked = "🛤️×${count} "
-stashed = "📦 "
-modified = "📝×${count} "
-staged = "🗃️ ×${count} "
-renamed = "📛×${count} "
-deleted = "🗑️×${count} "
-style = "bright-white"
+conflicted = "conflicted  "
+ahead = "ahead:${count} "
+behind = "behind:${count} "
+diverged = "diverged: ahead:${ahead_count} behind:${behind_count} "
+untracked = "untracked:${count} "
+stashed = "stashed "
+modified = "modified:${count} "
+staged = "staged:${count} "
+renamed = "renamed:${count} "
+deleted = "deleted:${count} "
+style = "bold blue"
 format = "[$all_status$ahead_behind]($style)"
 
 [julia]
 format = "[$symbol$version]($style) "
-symbol = "ஃ "
+symbol = " "
 style = "bold green"
 
 [memory_usage]
@@ -83,7 +81,7 @@ disabled = false
 
 [python]
 format = "[$symbol$version]($style) "
-symbol = " "
+symbol = " "
 style = "bold blue"
 
 [c]
@@ -93,6 +91,7 @@ style = "bold green"
 
 [rust]
 format = "[$symbol$version]($style) "
+symbol = " "
 style = "bold green"
 
 # [time]
